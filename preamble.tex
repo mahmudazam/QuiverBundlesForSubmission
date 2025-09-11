@@ -1,0 +1,257 @@
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bbm}
+\usepackage{enumitem}
+\usepackage[mathscr]{euscript}
+\usepackage{float}
+\usepackage{ifthen}
+\usepackage{listings}
+\usepackage{mathdots}
+\usepackage{mleftright}
+\usepackage[new]{old-arrows}
+\usepackage{rotating}
+\usepackage{sansmath}
+\usepackage{tabularx}
+\usepackage{tikz}
+  \usetikzlibrary{positioning}
+\usepackage{tikz-cd}
+  \tikzcdset{
+    cells={font=\everymath\expandafter{\the\everymath\displaystyle}},
+  }
+\usepackage{todonotes}
+\usepackage{xcolor}
+\usepackage{xspace}
+
+\usepackage[pdftex,pdfpagelabels,bookmarks,hyperindex,hyperfigures]{hyperref}
+  \hypersetup{
+    colorlinks,
+    linkcolor={red!55!black},
+    urlcolor={blue!55!black},
+    citecolor={green!55!black}
+  }
+\usepackage{cleveref}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    xleftmargin={2.5em},
+    %xrightmargin={2.5em},
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+
+\usepackage{subfiles}
+
+\newtheorem{thm}{Theorem}
+\numberwithin{thm}{section}
+
+\newtheorem{cthm}[thm]{Theorem (under a Conjecture)}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cnj}[thm]{Conjecture}
+\newtheorem{guess}[thm]{Guess}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{ccor}[thm]{Corollary (under a Conjecture)}
+
+\theoremstyle{definition}
+
+\newtheorem{cns}[thm]{Construction}
+\newtheorem{conv}[thm]{Convention}
+\newtheorem{exm}[thm]{Example}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{fact}[thm]{Fact}
+\newtheorem{notn}[thm]{Notation}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{warn}[thm]{Warning}
+\newtheorem{qsn}[thm]{Question}
+\newtheorem{asmptn}[thm]{Assumption}
+
+\newcommand{\bb}{\mathbb}
+\newcommand{\bbm}{\mathbbm}
+\newcommand{\f}{\mathfrak}
+\newcommand{\s}{\mathscr}
+\newcommand{\p}{\mathsf}
+\newcommand{\pb}{\mathsfbf}
+\newcommand{\mc}{\mathcal}
+
+\newcommand{\bC}{\bb{C}}
+\newcommand{\bR}{\bb{R}}
+\newcommand{\bk}{\bbm{k}}
+\newcommand{\one}{\bbm{1}}
+\newcommand{\bZ}{\bb{Z}}
+\newcommand{\bQ}{\bb{Q}}
+\newcommand{\sK}{\s{K}}
+\newcommand{\sA}{\s{A}}
+\newcommand{\sB}{\s{B}}
+\newcommand{\sC}{\s{C}}
+\newcommand{\sD}{\s{D}}
+\newcommand{\sE}{\s{E}}
+\newcommand{\sP}{\s{P}}
+\newcommand{\cP}{\mc{P}}
+\newcommand{\sS}{\s{S}}
+
+\newcommand{\wh}{\widehat}
+\newcommand{\br}[1]{\mleft( #1 \mright)}
+\newcommand{\sbr}[1]{\mleft[ #1 \mright]}
+\newcommand{\gen}[1]{\mleft\langle #1 \mright\rangle}
+\newcommand{\set}[2][]{
+  \ifthenelse{\equal{#1}{}}{
+    \mleft\{ #2 \mright\}
+  }{
+    \mleft\{ #1\ :\ #2 \mright\}
+  }
+}
+
+\renewcommand{\to}[1][]{
+  \ifthenelse{\equal{#1}{}}{
+    \longrightarrow
+  }{
+    \stackrel{#1}{\longrightarrow}
+  }
+}
+
+\newcommand{\To}[1][]{
+  \ifthenelse{\equal{#1}{}}{
+    \Longrightarrow
+  }{
+    \stackrel{#1}{\Longrightarrow}
+  }
+}
+
+\renewcommand{\mapsto}[1][]{
+    \ifthenelse{\equal{#1}{}}{
+      \longmapsto
+    }{
+      \stackrel{#1}{\longmapsto}
+    }
+}
+
+\newcommand{\ot}[1][]{
+  \ifthenelse{\equal{#1}{}}{
+  \longleftarrow
+  }{
+    \stackrel{#1}{\longleftarrow}
+  }
+}
+
+\newcommand{\adj}{\text{ad}\ }
+\renewcommand{\ker}[1]{\text{ker}\br{#1}}
+\newcommand{\im}{\mathrm{im}\xspace}
+\newcommand{\gl}[1]{\pb{gl}\br{#1}}
+\newcommand{\Gl}{\mathrm{Gl}}
+\newcommand{\Mat}{\mathrm{Mat}}
+\newcommand{\SL}[1]{\pb{sl}\br{#1}}
+\newcommand{\bmat}[1]{\begin{bmatrix} #1 \end{bmatrix}}
+\newcommand{\spn}[1]{\text{span}\set{#1}}
+\newcommand{\tr}{\text{tr}\xspace}
+\newcommand{\End}{\mathrm{End}}
+\newcommand{\Spn}{\mathrm{Span}}
+\newcommand{\lrarrow}{\stackrel{\rightarrow}{\leftarrow}}
+\newcommand{\hto}[1][]{\stackrel{#1}{\longhookrightarrow}}
+\newcommand{\lto}[1][]{\stackrel{#1}{\longrightarrow}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\del}{\delta}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\ev}{\mathrm{ev}}
+
+\renewcommand{\Ref}[2][]{\ifthenelse{\equal{#1}{}}{\ref{#2}}
+                      {\hyperref[#2]{\ref*{#1}(\ref*{#2})}}}
+\newcommand{\Aref}[2][]{\ifthenelse{\equal{#1}{}}{\autoref{#2}}
+                      {\hyperref[#2]{\autoref*{#1}\ref*{#2}}}}
+\newcommand{\Sref}[1]{\hyperref[#1]{\S \ref*{#1}}}
+\newcommand{\dom}{\mathrm{dom}}
+\newcommand{\codom}{\mathrm{codom}}
+
+\newcommand{\Field}{\mathrm{Field}}
+\newcommand{\Set}{\mathrm{Set}}
+\newcommand{\Fr}[1]{\mathrm{Frac}\br{#1}}
+\newcommand{\Gal}{\mathrm{Gal}}
+\newcommand{\Grp}{\mathrm{Grp}}
+\newcommand{\Grpd}{\mathrm{Grpd}}
+\newcommand{\op}{\mathrm{op}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\Et}{\mathrm{Et}}
+\newcommand{\Sub}{\mathrm{Sub}}
+\newcommand{\Deck}{\mathrm{Deck}}
+\newcommand{\mono}{\mathrm{mono}}
+\newcommand{\Etale}{\mathrm{Etale}}
+\newcommand{\PSh}{\mathrm{PSh}}
+\newcommand{\PShi}{\mathrm{PSh}_\infty}
+\newcommand{\Sh}{\mathrm{Sh}}
+\newcommand{\Fun}{\mathrm{Fun}}
+\newcommand{\Top}{\mathrm{Top}}
+\newcommand{\Pnt}{\mathrm{Pnt}}
+\newcommand{\Aut}{\mathrm{Aut}}
+\newcommand{\Sing}{\mathrm{Sing}}
+\newcommand{\Nrv}{\mathrm{N}}
+\newcommand{\Shi}{\Sh^\infty_{\sS}}
+\newcommand{\Pro}{\mathrm{Pro}}
+\newcommand{\Hom}{\mathrm{Hom}}
+\newcommand{\HHom}{\mathcal{H}\mathrm{om}}
+\newcommand{\Map}{\mathrm{Map}}
+\DeclareMathOperator{\holim}{\mathrm{holim}}
+\DeclareMathOperator{\hocolim}{\mathrm{hocolim}}
+\DeclareMathOperator{\colim}{\mathrm{colim}}
+\newcommand{\Tors}{\mathrm{Tors}}
+\newcommand{\Topoi}{\s{T}op_\infty}
+\newcommand{\Sc}[1][]{\ifthenelse{\equal{#1}{}}{\mathrm{Sch}}{\mathrm{Sch}_{/#1}}}
+\newcommand{\dSc}[1][]{\mathrm{d}\Sc[#1]}
+\newcommand{\ASc}{\mathrm{AffSch}}
+\newcommand{\et}{\mathrm{et}}
+\newcommand{\Spec}{\mathrm{Spec}}
+\newcommand{\Proj}{\mathrm{Proj\ }}
+\newcommand{\CP}{\mathbb{C}P}
+\newcommand{\Quot}{\mathrm{Quot}}
+\newcommand{\icat}{$\infty$--category\xspace}
+\newcommand{\Cat}{\s{C}\mathrm{at}}
+\newcommand{\Catinf}{\Cat_\infty}
+\newcommand{\sCat}{\mathrm{s}\Cat}
+\newcommand{\sSet}{\mathrm{sSet}}
+\newcommand{\Mot}{\mathrm{Mot}}
+\newcommand{\QCoh}{\mathrm{QCoh}}
+\newcommand{\VecBun}{\mathrm{VecBun}}
+\newcommand{\Vect}{\mathrm{Vect}}
+\newcommand{\Bun}{\mathrm{Bun}}
+\newcommand{\Sym}{\mathrm{Sym}\xspace}
+\newcommand{\St}{\mathrm{St}}
+\newcommand{\AlgSt}{\mathrm{AlgSt}}
+\newcommand{\DSt}{\mathrm{DSt}}
+\newcommand{\SpSt}{\mathrm{SpSt}}
+
+\newcommand{\Mod}{\mathrm{Mod}}
+\newcommand{\LMod}{\mathrm{LMod}}
+\newcommand{\CRing}{\mathrm{CRing}}
+\newcommand{\CAlg}{\mathrm{CAlg}}
+\newcommand{\Mon}{\mathrm{Mon}}
+\newcommand{\Zar}{\mathrm{Zar}}
+\newcommand{\Nis}{\mathrm{Nis}}
+\newcommand{\Gr}{\mathrm{Gr}}
+\newcommand{\Ab}{\mathrm{Ab}}
+\newcommand{\Ob}[1]{\mathrm{Ob}\br{#1}}
+\newcommand{\Tr}{\mathrm{tr}}
+\newcommand{\Kan}{\s{K}\mathrm{an}}
+\newcommand{\Aff}{\mathrm{Aff}}
+\newcommand{\ASt}{\mathrm{AlgSt}}
+\newcommand{\str}{\mathrm{str}}
+\newcommand{\unstr}{\mathrm{unstr}}
+\newcommand{\Stab}{\mathrm{Stab}}
