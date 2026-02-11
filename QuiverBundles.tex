@@ -63,7 +63,7 @@ homotopy theory;
 \end{enumerate}
 The main goal of this paper is to initiate some minimal foundation for such
 investigations.
-\textit{Porta-Sala:}
+%\textit{Porta-Sala:}
 Moduli stacks of quiver bundles have been constructed in great generality in
 \cite[Proposition 7.1 and Corollary 7.2]{HP25} in the context of derived stacks
 and derived analytic stacks. It was pointed out to us by the authors of that paper
@@ -90,7 +90,7 @@ a somewhat general base $1$--stack over the fppf site of commutative rings and
 a finite indexing simplicial set. From this,
 we recover the algebraicity of such stacks when the base is a projective variety over a field.
 \begin{rmk}\label{rmk:Porta-Sala-alg-1}
-\textit{Porta-Sala:}
+%\textit{Porta-Sala:}
 We should clarify here that such algebraicity results are available in far greater generality.
 For instance, \cite[Proposition II.2.8]{DPS25} along with To\"en-Vaqui\'e's representability theorem
 (\cite[Theorem II.2.22]{DPS25} or \cite[Theorem 3.6]{TV07}) show that the derived moduli stack of quiver
@@ -98,7 +98,8 @@ representations in perfect complexes over a smooth variety over a field $k$ is l
 of finite presentation. While our algebraicity results can be recovered from this, our constructions
 and method of proof are different. Furthermore, our methods apply directly in the non-derived setting
 and yield additional properties of the constructed moduli stacks
-under suitable hypotheses on the base stack --- see \cref{thm:algebraicity}.
+under suitable hypotheses on the base stack --- see \cref{thm:algebraicity} and
+\cref{rmk:more-relaxed-hypotheses}.
 \end{rmk}
 In \cref{sec:QuiverVarieties}, we sketch how to recover quiver varieties and
 Nakajima quiver varieties from our framework, the precise details of which we leave
@@ -161,7 +162,9 @@ a composeable pair of morphisms to their composite. These maps
 satisfy diagrams that express the associativity and unitality of
 composition. Of course, these are diagrams in a $(2, 1)$--category.\\
 
-\noindent\textbf{Acknowledgements.} The authors thank Kuntal Banerjee, Daniel Halpern-Leistner, Matthew Koban, Kobi Kremnizer, Carlos Simpson, Motohico Mulase, and Qixiang Wang for very useful discussions.  We acknowledge Dat Minh Ha for valuable discussions around the formulation of Theorem \eqref{thm:algebraicity}. The authors are especially grateful to Toni Annala for hosting the first-named author for a crucial research stay at the Institute for Advanced Study in March 2024 and for many discussions after that time, leading to a number of crucial developments around the parametrization of vector bundle triples in this work.  We are also indebted to Antoine Bourget for hosting the first-named author for a two-month research stay during the months of October and November 2024 at CEA Saclay, during which the major part of the section on quiver varieties was completed, and for many discussions about quiver varieties. We are pleased to acknowledge that this stay was funded by a High Level Scientific Fellowship (HLSF) for graduate students from Campus France and the Embassy of France in Canada. \textit{Porta-Sala:} We are grateful to Mauro Porta and Francesco Sala for pointing us to their work generalizing some of our results to the setting of derived geometry. Formative moments towards the completion of the work occurred during the Arithmetic Quantum Field Theory Conference at Harvard in March 2024, in which the first-named author participated through a generous conference fellowship from the Arithmetic Quantum Field Theory Program; the Workshop on Advances in Higgs Bundles at the Brin Mathematics Research Centre in Maryland in April 2024 in which the second-named author was a speaker and participant; the 2nd Simons Math Summer Workshop, convened around the topic of ``Moduli'' at the Simons Center for Geometry and Physics in July 2024, in which the first-named author was a participant in residence, once again with generous student funding; and finally the Workshop on Hamiltonian Geometry and Quantization at the Fields Institute in July 2024, in which the second-named author was a speaker and participant. The authors thank the various organizing teams of these gatherings for creating such stimulating research environments. The second-named author was supported during the development of this work by a Natural Sciences and Engineering Research Council of Canada (NSERC) Discovery Grant, a Canadian Tri-Agency New Frontiers in Research Fund (NFRF) Exploration Stream Grant, and a Pacific Institute for the Mathematical Sciences (PIMS) Collaborative Research Group Award, for which this manuscript is PIMS report PIMS-20240716-CRG34. The first-named author was funded by a University Saskatchewan Dean's Scholarship, an NSERC Canada Graduate Scholarship (Doctoral), and the second-named author's Discovery Grant.  We gratefully acknowledge these funding sources.
+\noindent\textbf{Acknowledgements.} The authors thank Kuntal Banerjee, Daniel Halpern-Leistner, Matthew Koban, Kobi Kremnizer, Carlos Simpson, Motohico Mulase, and Qixiang Wang for very useful discussions.  We acknowledge Dat Minh Ha for valuable discussions around the formulation of \cref{thm:algebraicity}. The authors are especially grateful to Toni Annala for hosting the first-named author for a crucial research stay at the Institute for Advanced Study in March 2024 and for many discussions after that time, leading to a number of crucial developments around the parametrization of vector bundle triples in this work.  We are also indebted to Antoine Bourget for hosting the first-named author for a two-month research stay during the months of October and November 2024 at CEA Saclay, during which the major part of the section on quiver varieties was completed, and for many discussions about quiver varieties. We are pleased to acknowledge that this stay was funded by a High Level Scientific Fellowship (HLSF) for graduate students from Campus France and the Embassy of France in Canada.
+%\textit{Porta-Sala:}
+We are grateful to Mauro Porta and Francesco Sala for pointing us to their work generalizing some of our results to the setting of derived geometry. Formative moments towards the completion of the work occurred during the Arithmetic Quantum Field Theory Conference at Harvard in March 2024, in which the first-named author participated through a generous conference fellowship from the Arithmetic Quantum Field Theory Program; the Workshop on Advances in Higgs Bundles at the Brin Mathematics Research Centre in Maryland in April 2024 in which the second-named author was a speaker and participant; the 2nd Simons Math Summer Workshop, convened around the topic of ``Moduli'' at the Simons Center for Geometry and Physics in July 2024, in which the first-named author was a participant in residence, once again with generous student funding; and finally the Workshop on Hamiltonian Geometry and Quantization at the Fields Institute in July 2024, in which the second-named author was a speaker and participant. The authors thank the various organizing teams of these gatherings for creating such stimulating research environments. The second-named author was supported during the development of this work by a Natural Sciences and Engineering Research Council of Canada (NSERC) Discovery Grant, a Canadian Tri-Agency New Frontiers in Research Fund (NFRF) Exploration Stream Grant, and a Pacific Institute for the Mathematical Sciences (PIMS) Collaborative Research Group Award, for which this manuscript is PIMS report PIMS-20240716-CRG34. The first-named author was funded by a University Saskatchewan Dean's Scholarship, an NSERC Canada Graduate Scholarship (Doctoral), and the second-named author's Discovery Grant.  We gratefully acknowledge these funding sources.
 
 \section{Context}
 \label{sec:Context}
@@ -190,7 +193,7 @@ to most available models of geometry including derived algebraic geometry,
 spectral algebraic geometry, and derived analytic geometry with modifications
 as necessary.
 
-\textit{JAlg Referee Report, point 2:}
+%\textit{JAlg Referee Report, point 2:}
 We will then consider some assumptions on
 $\St_{\s{C}}^n$ for all $n$, modeled on the properties of the categories
 of quasicoherent sheaves and vector bundles over $1$--stacks in (non-derived) algebraic geometry
@@ -330,15 +333,14 @@ vector bundle $\mc{E}_X$. We will call them as such.
 \end{asmptn}
 
 \begin{rmk}
-\textit{JAlg Referee Report, point 1:}
+%\textit{JAlg Referee Report, point 1:}
 In the concrete geometric contexts, this makes $\mc{M}_{\Vect(X)}$ the moduli stack of vector bundles
 over $X$.
 In particular, for $\St_{\CRing_{/k}^{\heartsuit, \op}}^1$, $\mc{M}_{\Vect(X)}$ is precisely
 the moduli stack of vector bundles over $X$ (as defined in, for example,
 \cite[First paragraph of \S 7.3]{CW17}). To see this, it suffices to unwrap the definition
 of the Grothendieck construction of $\Vect$. A similar argument shows that it coincides with
-the moduli stack of vector bundles in the derived setting, as defined in, for example
-\cite[Definition 10.7(iii)]{AK22}.
+the moduli stack of vector bundles in the derived setting, as defined in, for example \cite[\S 3]{AI22}.
 \end{rmk}
 
 \begin{notn}
@@ -365,13 +367,13 @@ Omitted, as these are well known properties.
 This is the case we will be most interested in for the present work.
 
 \begin{rmk}
-\textit{JAlg Referee Report, point 2:}
+%\textit{JAlg Referee Report, point 2:}
 We should clarify that these assumptions are satisfied by all $1$--stacks irrespective of any form
 of algebraicity (Artin, Deligne-Mumford, etc.) or other special properties.
 \end{rmk}
 
 \begin{rmk}
-\textit{JAlg Referee Report, point 3:}
+%\textit{JAlg Referee Report, point 3:}
 For $n = \infty$, if we take $\s{C}$ to be the opposite of animated commutative rings,
 $\St_\s{C}$ to be derived stacks, $\QCoh$ and $\Vect$ to be the functors sending derived
 stacks to the quasicategories of complexes of the respective objects,
@@ -389,13 +391,15 @@ of the symmetric algebra of a locally free sheaf might not be flat.
 \end{rmk}
 
 \begin{rmk}
-\textit{JAlg Referee Report, point 3:}
+%\textit{JAlg Referee Report, point 3:}
 Since the various moduli spaces related by non-Abelian Hodge theory have analytic
 forms, and the complex non-Abelian Hodge correspondence is heavily dependent on PDE theory,
 it might be worthwhile to explore the applicability of the techniques of this
-paper in the context of analytic stacks. Since the above assumptions rely only on categorical
-properties of stacks, we expect them to hold for the analytic stacks
-of \cite{CS19} and \cite{BKK24} as well.
+paper in the context of analytic stacks. Since the above assumptions hold
+for the $(2, 1)$-category of stacks with no additional constraints like algebraicity,
+by formal/categorical reasons,
+we expect them to hold for the analytic stacks of \cite{CS19} and \cite{BKK24} as well,
+for similar reasons, as these are just stacks over sites of analytic and simplicial commutative complete bornological rings respectively.
 \end{rmk}
 
 Given any setting of geometry where the above assumptions are
@@ -410,7 +414,7 @@ quivers of shape $I$, standard $n$--quivers.
 \end{defn}
 
 \begin{rmk}
-\textit{JAlg Referee Report, point 4:}
+%\textit{JAlg Referee Report, point 4:}
 We discuss the connection of the present work with ordinary and Nakajima quiver varieties in
 \cref{sec:QuiverVarieties}.
 \end{rmk}
@@ -428,7 +432,7 @@ existence of composites is never assumed.
 \end{exm}
 
 \begin{rmk}
-\textit{JAlg Referee Report, point 5:}
+%\textit{JAlg Referee Report, point 5:}
 Labels on vertices of a quiver are used to construct the space of representations
 as a finite dimensional vector space which is then used to construct quiver varieties.
 In our case, the space of representations is replaced by a moduli stack $\mc{M}_{\Vect(X), I}$
@@ -902,7 +906,7 @@ that for each $U$, we have a category object in $\Set$ given by
 \end{proof}
 
 \begin{rmk}
-\textit{Porta-Sala:}
+%\textit{Porta-Sala:}
 This result is likely a categorical truncation of the $2$--Segality established in \cite[Lemma II.4.1]{DPS25}
 \end{rmk}
 
@@ -1312,10 +1316,15 @@ is quasi-separated, locally of finite presentation, and has an affine diagonal b
 \cite[Theorem 1.0.1.]{BunG}, and hence satisfies all hypotheses of \cref{thm:algebraicity}.
 \end{proof}
 
-\begin{rmk}
-To the best of our knowledge, the hypotheses of \cref{thm:algebraicity} are
-not the most relaxed possible.
-There are more general results available on algebraicity of mapping
+\begin{rmk}\label{rmk:more-relaxed-hypotheses}
+For algebraicity, the hypotheses of \cref{thm:algebraicity} are
+not the most relaxed possible: see \cref{rmk:Porta-Sala-alg-1}.
+However, the more constrained hypotheses allowed us to prove some additional properties
+of the diagonal of the constructed moduli stacks of quiver bundles that are not
+immediate from the results available in the literature on quiver bundles.
+Furthermore, it might be possible to use the same techniques of this paper to obtain
+similar or stronger results with more relaxed hypotheses. For instance,
+there are more general results available on algebraicity of mapping
 stacks in both the classical \cite[Theorem 6.22]{AHR23} and the
 derived settings \cite[Theorem 5.1.1]{HP19}. Furthermore, it might be possible
 to rephrase the stack $\mc{M}_{\Vect(X), 1}$ as a Weil restriction
@@ -1324,19 +1333,8 @@ fibre products thereof
 (this was suggested to us by Daniel Halpern-Leistner at the
 $2^{\mathrm{nd}}$ Simons Math Summer Workshop on ``Moduli'' in July 2024).
 In this case,
-%let $\mc{E}'$ denote the pullback of $\mc{E}_X^\vee \boxtimes \mc{E}_X$ to
-%$\mc{M}_{\Vect(X)} \times \mc{M}_{\Vect(X)} \times X$ along the map
-%$\id_{\mc{M}_{\Vect(X)}} \times \id_{\mc{M}_{\Vect(X)}} \times \Delta_X$,
-%then the Weil restriction of $\mc{E}'$ to
-%$\mc{M}_{\Vect(X)} \times \mc{M}_{\Vect(X)}$ via the product
-%projection has the same functor of points as $\mc{M}_{\Vect(X), 1}$, which
 we might be able to use algebraicity results on Weil restrictions such as
 \cite[Theorem 5.1.14]{HP19} to further relax the conditions on $X$.
-In future work, we will attempt to use such results to prove
-the algebraicity of moduli stacks of quiver bundles over more general
-stacks.
-We will not address any results about smoothness in this paper but
-we plan to do so as well in future work.
 \end{rmk}
 
 \begin{rmk}[Meaning of categorification]
@@ -2135,7 +2133,7 @@ It suffices to see that they are constructed as iterated pullbacks of stacks sat
 \end{proof}
 
 \begin{rmk}\label{rmk:Porta-Sala-alg-Higgs}
-\textit{Porta-Sala:}
+%\textit{Porta-Sala:}
 This result also has a derived counterpart. \cite[Lemma 5.3.1]{PS20} combined with
 \cite[Corollary 4.6]{PS23} yield algebraicity and local finite presentation of the derived moduli
 stacks of Higgs bundle diagrams over a very general base stack. The algebraicity and local finite
