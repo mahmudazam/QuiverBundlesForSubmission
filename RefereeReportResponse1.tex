@@ -1,6 +1,11 @@
 \documentclass[11pt]{article}
 
-\input{preamble}
+\input{./preamble}
+
+\usepackage[style=alphabetic]{biblatex}
+\renewcommand{\subtitlepunct}{: }
+\addbibresource{./refs.bib}
+\AtNextBibliography{\small}
 
 \begin{document}
 
@@ -19,9 +24,7 @@ indicated, the numbers referred to below are the ones in the most recent version
 affine schemes in Remark 2.12. In particular, we have clarified here how the usual moduli stack of
 vector bundles can be obtained by specializing Definition 2.10.
 We have also added correct references to the definition in the contexts of non-derived and
-derived algebraic geometry. We mainly use the non-derived version in the paper.
-
-\todo[inline]{Steve to address second paragraph of point 1 in Referee Report.}
+derived algebraic geometry. We mainly use the non-derived version in the paper. \item Upon the referee's encouragement, we weave a deeper narrative across the introduction that situates our programme and results within the works of King, Perroni, Craw--Smith, Abdelgadir, Porta and Porta--Sala, and others.  We believe this improves the accessibility for the reader and recognizes important contributions.
 
 \item In the paragraph before Assumption 2.1, we have provided the origin of the assumptions of
 Section 2: in particular, these assumptions are modeled after well-known properties of the
@@ -30,8 +33,6 @@ Furthermore, in Remark 2.16, we have clarified that these assumptions are satisf
 over the site of affine schemes, regardless of algebraicity/geometricity. This includes
 Deligne-Mumford and Artin stacks. This also includes root stacks, as they are defined as pullbacks
 of stacks.
-
-\todo[inline]{Steve to assess the claim about root stacks.}
 
 \item We have removed Conjectures 2.14 and 2.16 (previous numbering) and added Remarks 2.17 and 2.19
 in their place.
@@ -54,8 +55,6 @@ quiver varieties obtained from labeled quivers can be recovered from our work. H
 the reader to Section 5 where a more detailed discussion of these aspects is given. However, we
 note that a treatment of quiver varieties is not a major purpose of this paper, and hence we have
 deferred a thorough discussion of quiver varieties and labelings on quivers to future work.
-
-\todo[inline]{Steve to assess the completeness of this particular point thoroughly.}
 
 \item We have made spelling corrections in various parts of the paper, including the ones pointed
 out by the referee.
@@ -80,7 +79,6 @@ connections, as well as showing their algebraicity. We have added remarks throug
 (please see Section 1, Remark 1.1, Remark 3.4, Remark 4.12 and Remark 6.11) describing the
 similarities and differences with their work.
 
-\todo[inline]{Steve to double check these remarks.}
 \end{enumerate}
 
 \end{document}
